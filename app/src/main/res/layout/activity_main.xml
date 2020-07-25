@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/box">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/miles"
+        android:textSize="30sp"
+        android:id="@+id/miles"
+        android:gravity="center">
+    </TextView>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/miles"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/miles_edit"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@+id/miles">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KM"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:id="@+id/km"
+        android:layout_below="@+id/miles"
+        android:gravity="center">
+    </TextView>
+    <EditText
+        android:layout_width="150dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/km"
+        android:layout_alignLeft="@+id/miles_edit"
+        android:layout_below="@+id/miles"
+        android:id="@+id/km_edit"
+        android:layout_alignBottom="@+id/km">
+    </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert km to miles"
+        android:layout_below="@+id/box"
+        android:id="@+id/km_to_miles"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert miles to km"
+        android:id="@+id/miles_to_km"
+        android:layout_below="@+id/km_to_miles"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+
+</RelativeLayout>
+</RelativeLayout>
